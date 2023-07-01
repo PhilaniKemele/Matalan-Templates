@@ -95,11 +95,11 @@ footer {
 
     .nav-bar {
         background-color: rgb(217, 217, 217);
-        height: 100px;
+        height: 80px;
     }
     
     h1 {
-        font-size: 30px;
+        font-size: 23px;
         color: rgb(179, 0, 0);
         padding: 25px;
         font-family:sans-serif;
@@ -112,7 +112,8 @@ footer {
     
     .card-list {
         border: 3px solid red;
-    
+        transition: transform 0.3s ease;
+        margin: 50px;
     }
     
     .card-list p1 {
@@ -125,8 +126,8 @@ footer {
     }
 
     .copy {
-        font-size: 15px;
-        margin-right: -400px;
+        font-size: 10px;
+        margin-right: -200px;
         margin-bottom: 10px;
     }
     
@@ -134,7 +135,7 @@ footer {
     
         background-color: rgb(217, 217, 217);
         text-align: center;
-        font-size: 25px;
+        font-size: 17px;
         margin-top: 100px;
         padding-top: 30px;
         padding-bottom: 30px;
