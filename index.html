@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MATALAN TEMPLATES</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="mata.jpg" type="image/x-icon">
 </head>
 <body>
     <div class="nav-bar">
@@ -44,20 +45,13 @@
         </div>
 		
         <div class="card-list">
-            <p1>SEPARATE ORDERS</p1><br>
-            <p2> Thank you for reaching out about your order. I've checked and it seems that your order is being delivered in two parts. The second part is on its way and should arrive soon. If you have any more questions or need further assistance, feel free to let me know. I'm here to help! </p2>
-            <button class="copy" onclick="copyToClipboard(this.parentElement)">copy</button>
-        </div>
-		
-        <div class="card-list">
             <p1>LUGGAGE WARRANTY</p1><br>
             <p2> Thanks for getting in touch with us regarding your luggage warranty. We're here to provide you with peace of mind and outstanding support. <br>
 				<br>
 				Rest easy knowing that every item of luggage you purchase from us is backed by a comprehensive 10-year warranty. If any issues arise during this time, we'll promptly resolve them. For the first 12 months of your warranty, Matalan handles all claims. If you're still within this period, please return the product to Matalan with your proof of purchase. After the first 12 months, please contact 'IT Luggage' directly for warranty inquiries. You can reach them through their website at www.itluggage.co.uk or by emailing customerservice@itluggage.co.uk. <br>
 				<br>
 				To ensure a valid warranty claim, keep the warranty hangtag and retain the proof of purchase (receipt, invoice, or order confirmation). Non-wheeled items may have different warranty terms. <br>
-				<br>
-				If you have any further questions or need assistance, don't hesitate to reach out. We're here to help!  </p2>
+				</p2>
             <button class="copy" onclick="copyToClipboard(this.parentElement)">copy</button>
         </div>
 		
@@ -91,12 +85,10 @@
             <button class="copy" onclick="copyToClipboard(this.parentElement)">copy</button>
         </div>
 		
-		<div class="card-list">
-            <p1>DROP SHIP</p1><br>
-            <p2> Thank you for reaching out to us.  To ensure that your query gets the attention it deserves, please can you log into your account and send us a message through the messaging centre. Rest assured, a member of our dropship team will be eagerly awaiting your message and will promptly reach out to you to get things resolved. If you have any other questions or need assistance with anything else, please feel free to ask. </p2> <br>
-            <button class="copy" onclick="copyToClipboard(this.parentElement)">copy</button>
-        </div>
     </div>
+
+    <button id="scrollToTopBtn" onclick="scrollToTop()">Scroll to Top</button>
+
 
     <footer>
         © Matalan Templates 2023
@@ -121,6 +113,23 @@
             document.body.removeChild(textarea);
 
             alert('Copied!');
+        }
+
+        window.onscroll = function() {
+            scrollFunction();
+        };
+
+        function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            document.getElementById("scrollToTopBtn").style.display = "block";
+        } else {
+            document.getElementById("scrollToTopBtn").style.display = "none";
+        }
+        }
+
+        function scrollToTop() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
         }
 
     </script>

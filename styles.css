@@ -70,6 +70,24 @@ h1 {
     transform: scale(1.1);
 }
 
+#scrollToTopBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    padding: 10px 20px;
+    background-color: #555;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    z-index: 9999;
+  }
+  
+  #scrollToTopBtn:hover {
+    background-color: #333;
+  }  
+
 footer {
     background-color: rgb(217, 217, 217);
     text-align: center;
